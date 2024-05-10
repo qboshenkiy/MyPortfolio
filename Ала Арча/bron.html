@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Бронирование</title>
+  </head>
+  <body>
+    <div class="stiky">
+      <form class="form">
+        <h1 class="title-bron">Бронирование</h1>
+
+        <div class="initial-input">
+          <label for="text_input_child">ФИО</label>
+          <input type="text" id="text_input_child" name="text_input_child" />
+        </div>
+        <div class="initial-input">
+          <label for="text_input_child">Номер</label>
+          <input type="number" id="text_input_child" name="text_input_child" />
+        </div>
+        <div class="email-input">
+          <label for="text_input_child">Email</label>
+          <input type="email" id="text_input_child" name="text_input_child" />
+        </div>
+        <div class="date-input">
+          <label for="dateTimePicker">Выберите дату и время:</label>
+          <input
+            type="datetime-local"
+            id="dateTimePicker"
+            name="selectedDateTime"
+          />
+        </div>
+
+        <div class="check-input">
+          <label for="text_input_child">Кол-во человек:</label>
+          <input type="number" id="text_input_child" name="text_input_child" />
+        </div>
+        <div id="checkboxContainer">
+          <input type="checkbox" id="city1" name="city" value="Бишкек" />
+          <label for="city1">Инструктор</label>
+
+          <input type="checkbox" id="city2" name="city" value="Токмок" />
+          <label for="city2">Инвентарь</label>
+
+          <input type="checkbox" id="city3" name="city" value="Кара-Балта" />
+          <label for="city3">Экипировка</label>
+        </div>
+        <div class="city-input">
+          <label for="">Город</label>
+          <select id="choice" name="choice">
+            <option value="1">Бишкек</option>
+            <option value="2">Токмок</option>
+            <option value="3">Кара-Балта</option>
+          </select>
+        </div>
+
+        <button class="reg-btn"><img src="img/Frame.svg" alt="">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>
